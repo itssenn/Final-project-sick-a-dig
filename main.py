@@ -20,9 +20,6 @@ pygame.display.set_caption("Dig")
 clock = pygame.time.Clock()
 
 # Sounds
-
-# sell_sound = pygame.mixer.Sound("sounds/sell.wav")
-# refuel_sound = pygame.mixer.Sound("sounds/refuel.wav")
 background_sound = pygame.mixer.Sound("sounds/background.mp3")
 background_sound.set_volume(0.2)
 
@@ -33,7 +30,7 @@ all_sprites = Allsprites()
 def setup():
     map = load_pygame("maps/map.tmx")
 
-    for x, y, image in map.get_layer_by_name("sky").tiles():
+    for x, y, image in map.get_layer_by_name("bg").tiles():
         Sprite((x * TILE_SIZE ,y * TILE_SIZE), image, all_sprites)
 
     for x, y, image in map.get_layer_by_name("block").tiles():
@@ -61,26 +58,19 @@ def setup():
 setup()
 
 def draw_ui():
-    font = pygame.font.Font(None, 74)
-
-    text = font.render(f'Fuel: {player.fuel}', True, (255, 255, 255))
-    text_rect = text.get_rect(center=(sc_w / 2, sc_h - 50))
-    display_surface.blit(text, text_rect)
-
-    text = font.render(f'Coin: {player.coin}', True, (255, 255, 255))
-    text_rect = text.get_rect(center=(sc_w / 2, sc_h - 100))
-    display_surface.blit(text, text_rect)
-
-    text = font.render(f'{sum(list(player.inventory.values()))} / {player.max_inventory}', True, (255, 255, 255))
-    text_rect = text.get_rect(center=(sc_w / 2, sc_h - 150))
-    display_surface.blit(text, text_rect)
+    draw_text(f'Fuel: {player.fuel}', sc_w / 2, sc_h - 50)
+    draw_text(f'Coin: {player.coin}', sc_w / 2, sc_h - 100)
+    draw_text(f'{sum(list(player.inventory.values()))} / {player.max_inventory}', sc_w / 2, sc_h - 150)
 
     if player.fuel <= 0:
-        text = font.render('Fuel is empty!', True, (255, 255, 255))
-        text_rect = text.get_rect(center=(sc_w / 2, sc_h / 5))
-        display_surface.blit(text, text_rect)
-    
-    
+        draw_text('Fuel is empty!', sc_w / 2, sc_h / 5)
+
+def draw_text(text, x, y):
+    font = pygame.font.Font(None, 74)
+    text = font.render(text, True , (255,255,255))
+    text_rect = text.get_rect(center=(x, y))
+    display_surface.blit(text, text_rect)
+
 
 #Sprite 
 player = Player((6400,2050), all_sprites, collision_sprites) 

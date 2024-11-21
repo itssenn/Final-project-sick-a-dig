@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.10" tiledversion="1.11.0" name="oouanobj" tilewidth="601" tileheight="601" tilecount="6" columns="0">
+<tileset version="1.10" tiledversion="1.11.0" name="oouanobj" tilewidth="601" tileheight="601" tilecount="8" columns="0">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="0">
   <image source="../Object/1st.png" width="128" height="128"/>
@@ -18,5 +18,11 @@
  </tile>
  <tile id="5">
   <image source="../Object/houseAsset 1.png" width="201" height="201"/>
+ </tile>
+ <tile id="6">
+  <image source="../Object/grave.png" width="101" height="71"/>
+ </tile>
+ <tile id="7">
+  <image source="../Object/sign.png" width="100" height="101"/>
  </tile>
 </tileset>

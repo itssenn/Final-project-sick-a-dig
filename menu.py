@@ -7,7 +7,7 @@ def main_menu():
     pygame.display.set_caption("Menu")
     clock = pygame.time.Clock()
     while True:
-        font = pygame.font.Font(None, 74)
+        font = pygame.font.Font(None, 50)
         text = font.render("Press any key to start", True, (255, 255, 255))
         text_rect = text.get_rect(center=(sc_w / 2, sc_h / 2))
         display_surface.blit(text, text_rect)

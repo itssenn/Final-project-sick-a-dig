@@ -90,13 +90,12 @@ class Player(pygame.sprite.Sprite):
 
         elif keys[pygame.K_e] and self.press:
             self.press = False
-            print(self.hitbox_rect)
             if self.hitbox_rect.colliderect((6500, 2110), (140 , 150)):
                 if self.coin >= self.max_fuel and self.max_fuel != self.fuel:
                     self.fuel = self.max_fuel
                     self.coin -= self.max_fuel
                     self.display_message('Fuel Refilled!', 1)
-                    print(f'Fuel: {self.fuel}')
+                    
                 elif self.coin < self.max_fuel and self.coin > 0:
                     self.fuel += self.coin
                     self.coin -= self.coin
@@ -144,10 +143,6 @@ class Player(pygame.sprite.Sprite):
                                 self.inventory[sprite.ore_type] += 1
                             else:
                                 self.inventory[sprite.ore_type] = 1
-
-                        print(self.inventory)
-                    else:
-                        print('Inventory is full!')
                     
     def move(self, dt):
         self.hitbox_rect.x += self.direction.x * self.speed * dt
