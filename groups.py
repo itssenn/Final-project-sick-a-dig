@@ -11,5 +11,4 @@ class Allsprites(pygame.sprite.Group):
         self.offset.y = - (target_postion[1] - sc_h / 2)
 
         for sprite in self:
-            # print(sprite.image)
             self.display_surface.blit(sprite.image, sprite.rect.topleft + self.offset)

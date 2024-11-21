@@ -22,6 +22,7 @@ class Player(pygame.sprite.Sprite):
         self.rect = self.image.get_rect(center = position)
         self.hitbox_rect = self.rect.inflate(-20,0)
         self.screen = pygame.display.set_mode((sc_w, sc_h))
+
         #movement
         self.direction = pygame.Vector2()
         self.speed = 500
@@ -35,7 +36,6 @@ class Player(pygame.sprite.Sprite):
 
         self.max_fuel = 10
         self.fuel = 10
-
 
         self.inventory = {}
         self.max_inventory = 30
@@ -54,7 +54,6 @@ class Player(pygame.sprite.Sprite):
         pygame.time.delay(duration * 250)  # Wait for 1 second
 
     def input(self):
-
         keys = pygame.key.get_pressed()
         self.direction.x = int(keys[pygame.K_d]) - int(keys[pygame.K_a])
         self.direction.y = int(keys[pygame.K_s]) - int(keys[pygame.K_w]) 
@@ -116,9 +115,9 @@ class Player(pygame.sprite.Sprite):
                         elif block == "diamond":
                             self.coin += amount * 50
                     self.inventory = {}
-                    
                 else:
                     self.display_message("Inventory is empty!", 1)
+
             if self.hitbox_rect.colliderect((1440, 2000), (400 , 200)):
                 if self.coin >= 999:
                     self.display_message('You Won!', 10)
@@ -163,7 +162,6 @@ class Player(pygame.sprite.Sprite):
 
     def animate(self, dt):
         keys = pygame.key.get_pressed()
-
         if keys[pygame.K_SPACE]:
             self.frame_index += 1000 * dt
             self.image = self.frames[self.state][int(self.frame_index) % len(self.frames[self.state])]
@@ -192,16 +190,3 @@ class Player(pygame.sprite.Sprite):
         self.move(dt)
         self.rotate()
         self.animate(dt)
-        
-class Fuel:
-    def __init__(self, x, y, w, h, max_fuel):
-        self.x = x
-        self.y = y
-        self.w = w
-        self.h = h
-        self.max_fuel = max_fuel
-        self.fuel = max_fuel
-    
-    def draw(self, screen):
-        pygame.draw.rect(screen, (255, 0, 0), (self.x, self.y, self.w, self.h))
-        pygame.draw.rect(screen, (0, 255, 0), (self.x, self.y, self.w * (self.fuel / self.max_fuel), self.h))

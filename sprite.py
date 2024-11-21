@@ -22,7 +22,7 @@ class Block(Sprite):
 
         self.block_health = self.Ore[self.ore_type]
 
-    def take_damage(self,multiplier):
+    def take_damage(self, multiplier):
         if self.is_diggable:
             self.block_health -= 1 * multiplier
 

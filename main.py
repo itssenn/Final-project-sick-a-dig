@@ -1,6 +1,5 @@
 import pygame
 import time
-
 from setting import *
 from player import Player
 from sprite import *

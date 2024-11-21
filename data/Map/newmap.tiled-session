@@ -3,10 +3,49 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "/Users/nattanantsaengpattanakornkit/Desktop/test/data/Object/DigObject.tsx",
+    "activeFile": "/Users/nattanantsaengpattanakornkit/Desktop/Final/map.tmx",
     "expandedProjectPaths": [
     ],
     "fileStates": {
+        "": {
+            "scaleInDock": 0.1236
+        },
+        "/Users/nattanantsaengpattanakornkit/Desktop/Final/data/Map/Back.tsx": {
+            "scaleInDock": 1
+        },
+        "/Users/nattanantsaengpattanakornkit/Desktop/Final/data/Map/map.tmx": {
+            "scale": 0.1221,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 4799.344799344799,
+                "y": 3198.198198198198
+            }
+        },
+        "/Users/nattanantsaengpattanakornkit/Desktop/Final/data/Map/oouanobj.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 0.0991,
+            "scaleInEditor": 0.28
+        },
+        "/Users/nattanantsaengpattanakornkit/Desktop/Final/data/Map/oountileset.tsx": {
+            "scaleInDock": 1
+        },
+        "/Users/nattanantsaengpattanakornkit/Desktop/Final/map.tmx": {
+            "scale": 0.06,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 3133.3333333333335,
+                "y": 1608.3333333333335
+            }
+        },
+        "/Users/nattanantsaengpattanakornkit/Desktop/data/Map/Back.tsx": {
+            "scaleInDock": 1
+        },
+        "/Users/nattanantsaengpattanakornkit/Desktop/data/Map/oouanobj.tsx": {
+            "scaleInDock": 1
+        },
+        "/Users/nattanantsaengpattanakornkit/Desktop/data/Map/oountileset.tsx": {
+            "scaleInDock": 1
+        },
         "/Users/nattanantsaengpattanakornkit/Desktop/test/data/Object/DigObject.tsx": {
             "dynamicWrapping": true,
             "scaleInDock": 0.1448,
@@ -18,8 +57,8 @@
         },
         "/Users/nattanantsaengpattanakornkit/Desktop/test/data/tileset/blocktileset.tsx": {
             "dynamicWrapping": false,
-            "scaleInDock": 0.9688,
-            "scaleInEditor": 1
+            "scaleInDock": 0.6373,
+            "scaleInEditor": 0.28
         },
         "/Users/nattanantsaengpattanakornkit/Desktop/test/data/tileset/killedblock.tsx": {
             "scaleInDock": 1,
@@ -31,21 +70,22 @@
         "/Users/nattanantsaengpattanakornkit/Desktop/test/data/tileset/sky.tsx": {
             "dynamicWrapping": false,
             "scaleInDock": 1,
-            "scaleInEditor": 1
+            "scaleInEditor": 0.3915
         },
         "Back.tsx": {
-            "dynamicWrapping": false
+            "dynamicWrapping": false,
+            "scaleInDock": 1
         },
         "killedblock.tsx": {
             "dynamicWrapping": false,
             "scaleInEditor": 1
         },
         "map.tmx": {
-            "scale": 0.0833,
+            "scale": 0.0281,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 4915.966386554623,
-                "y": 3721.488595438176
+                "x": 5871.886120996442,
+                "y": 6423.487544483987
             }
         },
         "ooblock.tsx": {
@@ -53,14 +93,19 @@
             "scaleInEditor": 0.31
         },
         "oouanobj.tsx": {
-            "dynamicWrapping": true
+            "dynamicWrapping": true,
+            "scaleInDock": 0.1072,
+            "scaleInEditor": 0.22
         },
         "oountileset.tsx": {
-            "dynamicWrapping": false
+            "dynamicWrapping": false,
+            "scaleInDock": 1
         }
     },
-    "last.exportedFilePath": "/Users/nattanantsaengpattanakornkit/Desktop/test/maps",
-    "last.imagePath": "/Users/nattanantsaengpattanakornkit/Desktop/test/data/Object",
+    "last.exportedFilePath": "/Users/nattanantsaengpattanakornkit/Desktop/Final/maps",
+    "last.externalTilesetPath": "/Users/nattanantsaengpattanakornkit/Desktop/Final/data/Map",
+    "last.imagePath": "/Users/nattanantsaengpattanakornkit/Desktop/Final/data/Object",
+    "lastUsedTilesetExportFilter": "Tiled tileset files (*.tsx *.xml)",
     "map.fixedSize": true,
     "map.height": 100,
     "map.lastUsedExportFilter": "Tiled map files (*.tmx *.xml)",
@@ -69,22 +114,24 @@
     "map.tileWidth": 64,
     "map.width": 200,
     "openFiles": [
-        "map.tmx",
         "/Users/nattanantsaengpattanakornkit/Desktop/test/data/tileset/blocktileset.tsx",
-        "/Users/nattanantsaengpattanakornkit/Desktop/test/data/tileset/sky.tsx",
-        "/Users/nattanantsaengpattanakornkit/Desktop/test/data/Object/DigObject.tsx"
+        "/Users/nattanantsaengpattanakornkit/Desktop/Final/data/Map/map.tmx",
+        "/Users/nattanantsaengpattanakornkit/Desktop/Final/map.tmx"
     ],
     "project": "newmap.tiled-project",
     "recentFiles": [
-        "/Users/nattanantsaengpattanakornkit/Desktop/test/data/Object/DigObject.tsx",
-        "map.tmx",
         "/Users/nattanantsaengpattanakornkit/Desktop/test/data/tileset/blocktileset.tsx",
+        "/Users/nattanantsaengpattanakornkit/Desktop/Final/data/Map/map.tmx",
+        "/Users/nattanantsaengpattanakornkit/Desktop/Final/map.tmx",
+        "/Users/nattanantsaengpattanakornkit/Desktop/Final/data/Map/oouanobj.tsx",
+        "oouanobj.tsx",
         "/Users/nattanantsaengpattanakornkit/Desktop/test/data/tileset/sky.tsx",
+        "map.tmx",
+        "/Users/nattanantsaengpattanakornkit/Desktop/test/data/Object/DigObject.tsx",
         "ooblock.tsx",
         "/Users/nattanantsaengpattanakornkit/Desktop/test/data/tileset/killedblockAsset 3.tsx",
         "killedblock.tsx",
-        "/Users/nattanantsaengpattanakornkit/Desktop/test/data/tileset/killedblock.tsx",
-        "/Users/nattanantsaengpattanakornkit/Desktop/test/data/tileset/back.tsx"
+        "/Users/nattanantsaengpattanakornkit/Desktop/test/data/tileset/killedblock.tsx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
